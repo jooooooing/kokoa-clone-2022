@@ -14,5 +14,25 @@
 }
 
 .nav_link {
+  position: relative;
   color: #2e363e;
+}
+
+.nav_notification {
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+}
+
+.nav__dot {
+  background-color: tomato;
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 25px;
+  bottom: 25px;
 }
