@@ -102,43 +102,49 @@
 }
 
 .reply .reply__column:first-child {
-  width: 10%;
+  width: 5%;
 }
 
 .reply .reply__column:last-child {
-  width: 90%;
+  width: 95%;
   position: relative;
 }
 
-.reply__column:last-child > i, 
+.reply__column:last-child > i,
 .reply__column:last-child button {
-    position: absolute;
-    right: 0;
-    top: 15px;
+  position: absolute;
+  right: 4px;
+  top: 3px;
 }
 
-}
 .reply input {
-  height: 30px;
-  width: 90%;
-  border: var(--main-border);
+  padding: 8px;
+  width: 100%;
+  border: var(--main_border);
   border-radius: 20px;
+  box-sizing: border-box;
 }
 
+.reply__column i {
+  opacity: 0.5;
+}
 
 .reply__column:last-child > i {
-    right: 40px;
+  right: 38px;
+  top: 16px;
 }
 
 .reply__column button {
-    background-color: var(--yellow);
-    border: none;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
+  background-color: var(--yellow);
+  border: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+}
+.reply__column button i {
+  opacity: 1;
 }
 
-.reply__column button:focus
-.reply__column button:active {
-    outline: none;
+.reply__column button:focus .reply__column button:active {
+  outline: none;
 }
